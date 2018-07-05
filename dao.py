@@ -80,38 +80,3 @@ def delete(pk):
 	return """
 	DELETE FROM proccess WHERE id = '{}'
 	""".format(pk)
-
-
-# @commit_close
-# def db_insert(name, phone, email):
-# 	return """
-# 	INSERT INTO users(name, phone, email)
-# 		VALUES('{}', '{}', '{}')
-# 	""".format(name, phone, email)
-
-
-# @commit_close
-# def db_update(name, email):
-# 	return """
-# 	UPDATE users SET name = '{}' WHERE email = '{}'
-# 	""".format(name, email)
-
-# @commit_close
-# def db_delete(email):	
-# 	return """
-# 	DELETE FROM users WHERE email='{}'
-# 	""".format(email)
-
-
-# def db_select(data, field):
-# 	con = sqlite3.connect('base.db')
-# 	cur = con.cursor()
-# 	sql = """
-# 	SELECT id, name, phone, email
-# 	FROM users
-# 	WHERE {}={}""".format(field, data)
-
-# 	cur.execute(sql)
-# 	data = cur.fetchall()
-# 	con.close()
-# 	return data
